@@ -82,11 +82,43 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 
 ## 其他
 
-### 使用或参考
+### 使用
 
-`Flutter(dev 0.10.1)`
+### 参考
 
-### 插件(集成)
+[inKino](https://github.com/roughike/inKino) a showtime browser for Finnkino cinemas  
+[FlutterScreens](https://github.com/samarthagarwal/FlutterScreens) 具有吸引人的用户界面的登录屏幕，按钮和加载器的集合  
+[layout-demo-flutter](https://github.com/bizz84/layout-demo-flutter) 布局小例子  
+[flukit](https://github.com/flutterchina/flukit) UI 工具例子  
+<!-- []() -->
+[Flutter-Notebook](https://github.com/OpenFlutter/Flutter-Notebook) 相关功能的集合 Demo
+[transformer_page_view](https://github.com/best-flutter/transformer_page_view) 页面过渡
+[FlutterPlayground](https://github.com/ibhavikmakwana/FlutterPlayground) FlutterPlayground  
+[juejin](https://github.com/MeFelixWang/juejin) Flutter 仿掘金 APP  
+[flutter_kaiyan](https://github.com/wtus/flutter_kaiyan) Flutter 仿开开眼 APP  
+[flutter-tetris](https://github.com/yubo725/flutter-tetris) 俄罗斯方块小游戏  
+
+### 插件
+
+**请求**
+[dio](https://github.com/flutterchina/dio)
+
+**微信插件**  
+[Fluwx](https://github.com/OpenFlutter/fluwx/blob/master/README_CN.md)
+
+**图标**  
+[FlutterIcon](https://github.com/ilikerobots/polyicon)
+[groovin_material_icons](https://github.com/GroovinChip/groovin_material_icons)
+[material_design_icons_flutter](https://github.com/ziofat/material_design_icons_flutter)
+
+**加载动画**
+[Spin kit](https://github.com/jogboms/flutter_spinkit) 一组加载指示器，使用 Flutter 动画
+
+**轮播**
+[flutter_swiper](https://github.com/best-flutter/flutter_swiper)
+
+**存储**
+[sqflite](https://github.com/tekartik/sqflite) SqLite
 
 ### 项目进度
 
