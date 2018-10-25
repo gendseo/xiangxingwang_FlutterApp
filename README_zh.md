@@ -8,8 +8,8 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 另一部分可能是: 插件的使用和收集, 项目进度和计划, 以及一些混合的东西；  
 当项目完成度达到60%, 我将使用 Google 的 GRPC 框架发布该 APP 的后端；  
 使用的编程语言是 Go 和部分 Python 脚本构建自动化；  
-编写代码使用 IDEA ，测试或改变一些细节时使用 VSCode；  
-我的 IDEA 和 VSCode 使用 Atom One Dark 主题，Source Code Pro 字体，14 1.4 字号和缩进；  
+编写，测试或改变一些细节时使用 VSCode ，模拟器使用 Genymotion ；  
+我的 VSCode 使用 Atom One Dark 主题，Source Code Pro 字体，15 1.4 字号和缩进；  
 一些设计图来自网上，如果侵犯到您的权益，请告诉我，我将马上删除；  
 
 ## 设计
@@ -66,14 +66,17 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 |   |—— main.dart  // 入口，加载 myApp.dart
 |   |—— Ui  // 页面
 |   |   |—— my_app.dart  // 主框架，控制主题和路由
-|   |   |—— Homes
-|   |   |   |—— home_page.dart  // 主页
+|   |   |—— Homes  // 主页
+|   |   |   |—— home_page.dart
 |   |   |   |—— commend_page.dart  // 推荐页
 |   |   |   |—— popular_page.dart  // 热门页
 |   |   |   `—— qa_page.dart  // 问答页
-|   |   |—— topic_page.dart  // 话题页
-|   |   |—— find_page.dart  // 发现页
-|   |   `—— user_page.dart  // 个人和设置页
+|   |   |—— Topics  // 话题页
+|   |   |   `—— topic_page.dart
+|   |   |—— Finds  // 发现页
+|   |   |   `—— find_page.dart
+|   |   |—— Users  // 个人和设置页
+|   |   |   `—— user_page.dart
 |   |—— Utils  // 工具
 |   |—— Services  // 服务
 |   `—— Storages  // 存储
@@ -81,9 +84,9 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 
 ## 编码
 
-- [x] 使用 [Fluwx](https://github.com/OpenFlutter/fluwx/blob/master/README_CN.md) 插件时需要升级 kotlin 和 gradle，做以下改变
+- [ ] 使用 [Fluwx](https://github.com/OpenFlutter/fluwx/blob/master/README_CN.md) 插件时需要升级 kotlin 和 gradle [参见](https://www.jianshu.com/p/f74fed94be96)
 
-``` gradle
+<!-- ``` gradle
 build.gradle
 
 buildscript {
@@ -107,20 +110,22 @@ distributionBase=GRADLE_USER_HOME
 distributionPath=wrapper/dists
 zipStoreBase=GRADLE_USER_HOME
 zipStorePath=wrapper/dists
-distributionUrl=https\://services.gradle.org/distributions/gradle-4.10.1-all.zip
-```
+distributionUrl=https\://services.gradle.org/distributions/gradle-4.6-all.zip
+``` -->
 
 - [x] 底部导航
-
-``` dart
-
-```
 
 ## 测试
 
 ## 其他
 
 ### 进度
+
+### 日计划
+
+2018/10/23：收集对应的功能需要的插件和做一些简易使用  
+2018/10/24：画图，持续集成项目功能，搭建框架  
+2018/10/25：整理对应功能的设计图，确定 APP 大概面貌
 
 ### 使用
 
@@ -175,12 +180,6 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-4.10.1-all.zip
 **小窗口**  
 [fluttertoast](https://pub.flutter-io.cn/packages/fluttertoast)  
 [oktoast](https://pub.flutter-io.cn/packages/oktoast)  
-
-### 日计划
-
-2018/10/23：收集对应的功能需要的插件和做一些简易使用  
-2018/10/24：画图，持续集成项目功能，搭建框架  
-2018/10/25：整理对应功能的设计图，确定 APP 大概面貌  
 
 ## 写在最后
 
