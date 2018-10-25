@@ -8,14 +8,13 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 另一部分可能是: 插件的使用和收集, 项目进度和计划, 以及一些混合的东西；  
 当项目完成度达到60%, 我将使用 Google 的 GRPC 框架发布该 APP 的后端；  
 使用的编程语言是 Go 和部分 Python 脚本构建自动化；  
-编写，测试或改变一些细节时使用 VSCode ，模拟器使用 Genymotion ；  
-我的 VSCode 使用 Atom One Dark 主题，Source Code Pro 字体，15 1.4 字号和缩进；  
+编写，测试或改变一些细节时使用 VSCode （Atom One Dark 主题，Source Code Pro 字体，15 1.4 字号和缩进），模拟器使用 Genymotion；  
 一些设计图来自网上，如果侵犯到您的权益，请告诉我，我将马上删除；  
 
 ## 设计
 
-**基本单位: 页面 => 视图 => 控件**  
-由于使用人群限制, 需要在布局和设计上做一些改变
+`基本单位: 页面 => 视图 => 控件`  
+**由于使用人群限制, 需要在布局和设计上做一些改变**  
 
 - 使用底部导航栏显示个人中心和设置页面, 而不是左侧抽屉导航栏
 - 采用底部悬浮按钮来存放重要功能，如发布信息
@@ -42,6 +41,26 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 - 视频播放
 - 地图显示
 
+**Widget** ``
+
+- 卡片式消息
+- 泳道
+- 轮播图
+
+**卡片式消息** ``  
+
+- 基本要素
+  - 标签
+  - 标题
+  - 内容
+  - 图片
+  - 时间
+  - 用户
+  - 用户头像
+  - 点赞
+  - 评论
+  - 分享
+
 **全屏轮播引导** ``
 
 - 触发：第一次安装 APP，更新版本
@@ -54,8 +73,9 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 
 **性能** `通常是优化`
 
-- 优化首屏加载速度，避免白屏时间过长，可填充入 APP 欢迎页面，并初始化数据
+- 优化首屏加载速度，避免白屏时间过长，可填充入 APP 欢迎页面，并初始化数据；
 - 请求网络数据时，应加载等待动画，避免长时间白屏，如过发生超时现象，反馈给用户并提示进行刷新或返回上一步等操作。GRPC 性能好得很，可能不会出现超时现象(;
+- 常量使用 const 定义，编译器会跳过；
 
 **Demo 目录结构** `父类目录首字母大写并以s结尾，Widget 小驼峰，类名大驼峰`
 
@@ -68,9 +88,9 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 |   |   |—— my_app.dart  // 主框架，控制主题和路由
 |   |   |—— Homes  // 主页
 |   |   |   |—— home_page.dart
-|   |   |   |—— commend_page.dart  // 推荐页
-|   |   |   |—— popular_page.dart  // 热门页
-|   |   |   `—— qa_page.dart  // 问答页
+|   |   |   |—— commend_page.dart  // 推荐
+|   |   |   |—— popular_page.dart  // 热门
+|   |   |   `—— qa_page.dart  // 问答
 |   |   |—— Topics  // 话题页
 |   |   |   `—— topic_page.dart
 |   |   |—— Finds  // 发现页
@@ -84,48 +104,29 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 
 ## 编码
 
-- [ ] 使用 [Fluwx](https://github.com/OpenFlutter/fluwx/blob/master/README_CN.md) 插件时需要升级 kotlin 和 gradle [参见](https://www.jianshu.com/p/f74fed94be96)
-
-<!-- ``` gradle
-build.gradle
-
-buildscript {
-    ext.kotlin_version = '1.2.71'
-    repositories {
-        google()
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
-```
-
-``` properties
-gradle-wrapper.properties
-
-distributionBase=GRADLE_USER_HOME
-distributionPath=wrapper/dists
-zipStoreBase=GRADLE_USER_HOME
-zipStorePath=wrapper/dists
-distributionUrl=https\://services.gradle.org/distributions/gradle-4.6-all.zip
-``` -->
+### 进度
 
 - [x] 底部导航
+- [ ] 卡片式消息
+- [ ] 登录页面
+- 搜索功能
+  - [ ] 搜索页面
+  - [ ] 搜索结果页
+- 对比功能
+  - [ ] 同类信息对比
+  - [ ] 商家对比
+- 评论点赞
+- 分享至XXX
 
 ## 测试
 
 ## 其他
 
-### 进度
-
 ### 日计划
 
 2018/10/23：收集对应的功能需要的插件和做一些简易使用  
 2018/10/24：画图，持续集成项目功能，搭建框架  
-2018/10/25：整理对应功能的设计图，确定 APP 大概面貌
+2018/10/25：整理对应功能的设计图，确定 APP 大概面貌  
 
 ### 使用
 
@@ -180,6 +181,10 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-4.6-all.zip
 **小窗口**  
 [fluttertoast](https://pub.flutter-io.cn/packages/fluttertoast)  
 [oktoast](https://pub.flutter-io.cn/packages/oktoast)  
+
+### 一些坑
+
+- 使用 [Fluwx](https://github.com/OpenFlutter/fluwx/blob/master/README_CN.md) 插件时需要升级 kotlin 和 gradle [参见](https://www.jianshu.com/p/f74fed94be96)
 
 ## 写在最后
 
