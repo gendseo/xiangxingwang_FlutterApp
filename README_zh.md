@@ -8,6 +8,9 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 另一部分可能是: 插件的使用和收集, 项目进度和计划, 以及一些混合的东西；  
 当项目完成度达到60%, 我将使用 Google 的 GRPC 框架发布该 APP 的后端；  
 使用的编程语言是 Go 和部分 Python 脚本构建自动化；  
+编写代码使用 IDEA ，测试或改变一些细节时使用 VSCode；  
+我的 IDEA 和 VSCode 使用 Atom One Dark 主题，Source Code Pro 字体，14 1.4 字号和缩进；  
+一些设计图来自网上，如果侵犯到您的权益，请告诉我，我将马上删除；  
 
 ## 设计
 
@@ -54,33 +57,70 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 - 优化首屏加载速度，避免白屏时间过长，可填充入 APP 欢迎页面，并初始化数据
 - 请求网络数据时，应加载等待动画，避免长时间白屏，如过发生超时现象，反馈给用户并提示进行刷新或返回上一步等操作。GRPC 性能好得很，可能不会出现超时现象(;
 
-**Demo 目录结构** `父类目录首字母大写并以s结尾，文件名和自定义 Widget 采用小驼峰，类名大驼峰`
+**Demo 目录结构** `父类目录首字母大写并以s结尾，Widget 小驼峰，类名大驼峰`
 
 ``` md
 .
 |—— Assets
 |—— Lib
 |   |—— main.dart  // 入口，加载 myApp.dart
-|   |—— Views  // 页面
-|   |   |—— myApp.dart  // 主框架，控制主题和路由
-|   |   |—— homePage.dart  // 主页
-|   |   |—— commendPage.dart  // 推荐页
-|   |   |—— popularPage.dart  // 热门页
-|   |   |—— qaPage.dart  // 问答页
-|   |   |—— topicPage.dart  // 话题页
-|   |   |—— findPage.dart  // 发现页
-|   |   `—— userPage.dart  // 个人和设置页
-|   |—— Layouts  // 视图
+|   |—— Ui  // 页面
+|   |   |—— my_app.dart  // 主框架，控制主题和路由
+|   |   |—— Homes
+|   |   |   |—— home_page.dart  // 主页
+|   |   |   |—— commend_page.dart  // 推荐页
+|   |   |   |—— popular_page.dart  // 热门页
+|   |   |   `—— qa_page.dart  // 问答页
+|   |   |—— topic_page.dart  // 话题页
+|   |   |—— find_page.dart  // 发现页
+|   |   `—— user_page.dart  // 个人和设置页
 |   |—— Utils  // 工具
 |   |—— Services  // 服务
-|   `—— Storages  // 本地存储
+|   `—— Storages  // 存储
 ```
 
 ## 编码
 
+- [x] 使用 [Fluwx](https://github.com/OpenFlutter/fluwx/blob/master/README_CN.md) 插件时需要升级 kotlin 和 gradle，做以下改变
+
+``` gradle
+build.gradle
+
+buildscript {
+    ext.kotlin_version = '1.2.71'
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+```
+
+``` properties
+gradle-wrapper.properties
+
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-4.10.1-all.zip
+```
+
+- [x] 底部导航
+
+``` dart
+
+```
+
 ## 测试
 
 ## 其他
+
+### 进度
 
 ### 使用
 
@@ -96,7 +136,6 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 [FlutterScreens](https://github.com/samarthagarwal/FlutterScreens) 具有吸引人的用户界面的登录屏幕，按钮和加载器的集合  
 [layout-demo-flutter](https://github.com/bizz84/layout-demo-flutter) 布局小例子  
 [flukit](https://github.com/flutterchina/flukit) UI 工具例子  
-<!-- []() -->
 [awesome-flutter](https://github.com/Solido/awesome-flutter) 看名字就知道是干什么的，不过多介绍  
 [Flutter-learning](https://github.com/AweiLoveAndroid/Flutter-learning/blob/master/README-CN.md) Flutter学习资料  
 [FlutterExampleApps](https://github.com/iampawan/FlutterExampleApps) 基本 Flutter 应用程序集合  
@@ -137,7 +176,7 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 [fluttertoast](https://pub.flutter-io.cn/packages/fluttertoast)  
 [oktoast](https://pub.flutter-io.cn/packages/oktoast)  
 
-### 项目进度
+### 日计划
 
 2018/10/23：收集对应的功能需要的插件和做一些简易使用  
 2018/10/24：画图，持续集成项目功能，搭建框架  
