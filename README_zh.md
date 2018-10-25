@@ -97,7 +97,10 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 [layout-demo-flutter](https://github.com/bizz84/layout-demo-flutter) 布局小例子  
 [flukit](https://github.com/flutterchina/flukit) UI 工具例子  
 <!-- []() -->
+[awesome-flutter](https://github.com/Solido/awesome-flutter) 看名字就知道是干什么的，不过多介绍  
+[Flutter-learning](https://github.com/AweiLoveAndroid/Flutter-learning/blob/master/README-CN.md) Flutter学习资料  
 [FlutterExampleApps](https://github.com/iampawan/FlutterExampleApps) 基本 Flutter 应用程序集合  
+[flutter-examples](https://github.com/nisrulz/flutter-examples) 一些 Flutter 示例  
 [GSYGithubAppFlutter](https://github.com/CarGuo/GSYGithubAppFlutter) 开源 Github 客户端 APP  
 [Flutter-UI-Kit](https://github.com/iampawan/Flutter-UI-Kit) 用到比较多的 UI 集合  
 [Flutter-Notebook](https://github.com/OpenFlutter/Flutter-Notebook) 相关功能的集合 Demo  
@@ -128,16 +131,17 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 [flutter_swiper](https://github.com/best-flutter/flutter_swiper)  
 
 **存储**  
-[sqflite](https://github.com/tekartik/sqflite) SqLite
+[sqflite](https://github.com/tekartik/sqflite) SqLite  
 
 **小窗口**  
-[fluttertoast](https://pub.flutter-io.cn/packages/fluttertoast)
-[oktoast](https://pub.flutter-io.cn/packages/oktoast)
+[fluttertoast](https://pub.flutter-io.cn/packages/fluttertoast)  
+[oktoast](https://pub.flutter-io.cn/packages/oktoast)  
 
 ### 项目进度
 
 2018/10/23：收集对应的功能需要的插件和做一些简易使用  
 2018/10/24：画图，持续集成项目功能，搭建框架  
+2018/10/25：整理对应功能的设计图，确定 APP 大概面貌  
 
 ## 写在最后
 
