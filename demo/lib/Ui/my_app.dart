@@ -18,7 +18,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _pages..add(HomePage())..add(TopicPage())..add(UserPage())..add(FindPage());
+    _pages..add(HomePage())..add(TopicPage())..add(FindPage())..add(UserPage());
   }
 
   @override
@@ -51,10 +51,9 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Scaffold(
+    return Scaffold(
       body: _pages[_currentIndex],
       bottomNavigationBar: _bottomNavigationBar(),
-    ));
+    );
   }
 }
