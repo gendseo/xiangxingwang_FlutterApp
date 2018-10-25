@@ -97,12 +97,14 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 [layout-demo-flutter](https://github.com/bizz84/layout-demo-flutter) 布局小例子  
 [flukit](https://github.com/flutterchina/flukit) UI 工具例子  
 <!-- []() -->
+[FlutterExampleApps](https://github.com/iampawan/FlutterExampleApps) 基本 Flutter 应用程序集合  
 [GSYGithubAppFlutter](https://github.com/CarGuo/GSYGithubAppFlutter) 开源 Github 客户端 APP  
 [Flutter-UI-Kit](https://github.com/iampawan/Flutter-UI-Kit) 用到比较多的 UI 集合  
 [Flutter-Notebook](https://github.com/OpenFlutter/Flutter-Notebook) 相关功能的集合 Demo  
 [transformer_page_view](https://github.com/best-flutter/transformer_page_view) 页面过渡  
 [FlutterPlayground](https://github.com/ibhavikmakwana/FlutterPlayground) FlutterPlayground  
 [juejin](https://github.com/MeFelixWang/juejin) Flutter 仿掘金 APP  
+[zhihu-flutter](https://github.com/HackSoul/zhihu-flutter) Flutter 仿知乎 APP  
 [flutter_kaiyan](https://github.com/wtus/flutter_kaiyan) Flutter 仿开开眼 APP  
 [flutter-tetris](https://github.com/yubo725/flutter-tetris) 俄罗斯方块小游戏  
 
