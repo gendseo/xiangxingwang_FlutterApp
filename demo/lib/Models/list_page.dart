@@ -17,7 +17,7 @@ class _ListPageState extends State<ListPage> {
             Padding(
               padding: const EdgeInsets.fromLTRB(5, 10, 0, 10),
               child: Row(
-                mainAxisSize: MainAxisSize.max,
+                mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   CircleAvatar(child: Image.asset("images/7.png")),
                   SizedBox(
