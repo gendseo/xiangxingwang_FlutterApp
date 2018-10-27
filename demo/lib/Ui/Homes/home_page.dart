@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _tabViews..add(PushTab())..add(HotTab())..add(QATab());
+    _tabViews..add(HotTab())..add(PushTab())..add(QATab());
   }
 
   @override

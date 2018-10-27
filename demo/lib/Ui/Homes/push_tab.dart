@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../list_page.dart';
+
 class PushTab extends StatefulWidget {
   _PushTabState createState() => _PushTabState();
 }
@@ -7,8 +9,9 @@ class PushTab extends StatefulWidget {
 class _PushTabState extends State<PushTab> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text("推荐"),
+    return ListView.builder(
+      itemCount: 10,
+      itemBuilder: (BuildContext context, int index) => ListPage(),
     );
   }
 }
