@@ -78,9 +78,17 @@ class _NewsCard1State extends State<NewsCard1> {
                     "会飞的鱼",
                     style: TextStyle(color: Colors.black),
                   ),
-                  Text(
-                    "三天前",
-                    style: TextStyle(color: Colors.black54, fontSize: 12),
+                  Row(
+                    children: <Widget>[
+                      Text(
+                        "三天前",
+                        style: TextStyle(color: Colors.black54, fontSize: 12),
+                      ),
+                      Text(
+                        " ·  勐仑",
+                        style: TextStyle(color: Colors.black54, fontSize: 12),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -153,9 +161,12 @@ class _NewsCard1State extends State<NewsCard1> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              _media(_xxwScreenWidth / 3, _xxwScreenWidth / 4, "images/1.jpg"),
-              _media(_xxwScreenWidth / 3, _xxwScreenWidth / 4, "images/3.jpg"),
-              _media(_xxwScreenWidth / 3, _xxwScreenWidth / 4, "images/2.jpg"),
+              _media(
+                  _xxwScreenWidth / 3, _xxwScreenWidth / 4, "images/1.jpg"),
+              _media(
+                  _xxwScreenWidth / 3, _xxwScreenWidth / 4, "images/3.jpg"),
+              _media(
+                  _xxwScreenWidth / 3, _xxwScreenWidth / 4, "images/2.jpg"),
             ],
           ),
         );
