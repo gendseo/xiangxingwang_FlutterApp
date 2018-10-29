@@ -13,16 +13,7 @@ class _PushTabState extends State<PushTab> {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: 10,
-      itemBuilder: (BuildContext context, int index) {
-        if (index % 3 == 0) {
-          print(index);
-          return ListPage();
-        } else if (index % 2 == 0) {
-          return NewsCard();
-        } else {
-          return NewsCard1();
-        }
-      },
+      itemBuilder: (BuildContext context, int index) => NewsCard1(),
     );
   }
 }
