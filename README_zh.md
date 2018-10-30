@@ -136,7 +136,11 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 2018/10/23：收集对应的功能需要的插件和做一些简易使用  
 2018/10/24：画图，持续集成项目功能，搭建框架  
 2018/10/25：整理对应功能的设计图，确定 APP 大概面貌  
-2018/10/26：今天写策划，明确对应功能生命周期  
+2018/10/26：写策划，明确对应功能生命周期  
+2018/10/27：写策划  
+2018/10/28：写策划  
+2018/10/29：写策划  
+2018/10/30：写策划  
 
 ### 使用
 
@@ -187,6 +191,13 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 
 **存储**  
 [sqflite](https://github.com/tekartik/sqflite) SqLite  
+
+**WebView**  
+[flutter_webview_plugin](https://pub.flutter-io.cn/packages/flutter_webview_plugin)  
+[flutter_web_view](https://pub.flutter-io.cn/packages/flutter_web_view)  
+
+**启动URL关联**  
+[url_launcher](https://pub.flutter-io.cn/packages/url_launcher)  
 
 **小窗口**  
 [fluttertoast](https://pub.flutter-io.cn/packages/fluttertoast)  
