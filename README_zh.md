@@ -68,8 +68,6 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
   - 点赞&数量
   - 分享&数量
 
-[](https://github.com/gendseo/xiangxingwang_FlutterApp/blob/master/image/card.png)
-
 **全屏轮播引导** ``
 
 - 触发：第一次安装 APP，更新版本
@@ -85,31 +83,6 @@ App 目前版本(dev 0.0.1), 下一个版本(alpha 0.0.1), 依此类推；
 - 优化首屏加载速度，避免白屏时间过长，可填充入 APP 欢迎页面，并初始化数据；
 - 请求网络数据时，应加载等待动画，避免长时间白屏，如过发生超时现象，反馈给用户并提示进行刷新或返回上一步等操作。GRPC 性能好得很，可能不会出现超时现象(;
 - 常量使用 const 定义，编译器会跳过；
-
-<!-- **Demo 目录结构** `父类目录首字母大写并以s结尾，Widget 小驼峰，类名大驼峰`
-
-``` md
-.
-|—— Assets
-|—— Lib
-|   |—— main.dart  // 入口，加载 myApp.dart
-|   |—— Ui  // 页面
-|   |   |—— my_app.dart  // 主框架，控制主题和路由
-|   |   |—— Homes  // 主页
-|   |   |   |—— home_page.dart
-|   |   |   |—— commend_page.dart  // 推荐
-|   |   |   |—— popular_page.dart  // 热门
-|   |   |   `—— qa_page.dart  // 问答
-|   |   |—— Topics  // 话题页
-|   |   |   `—— topic_page.dart
-|   |   |—— Finds  // 发现页
-|   |   |   `—— find_page.dart
-|   |   |—— Users  // 个人和设置页
-|   |   |   `—— user_page.dart
-|   |—— Utils  // 工具
-|   |—— Services  // 服务
-|   `—— Storages  // 存储
-``` -->
 
 ## 编码
 

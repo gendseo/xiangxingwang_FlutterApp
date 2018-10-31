@@ -1,3 +1,0 @@
-# xxw demo
-
-xxw demo
